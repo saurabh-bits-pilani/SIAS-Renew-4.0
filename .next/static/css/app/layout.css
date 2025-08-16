@@ -548,12 +548,6 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.hero-gradient {
-    background: linear-gradient(135deg, 
-      rgba(139, 69, 19, 0.3) 0%, 
-      rgba(75, 0, 130, 0.3) 50%, 
-      rgba(25, 25, 112, 0.3) 100%);
-  }
 .card-hover {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1126,19 +1120,6 @@ video {
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-@keyframes float {
-
-  0%, 100% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-}
-.animate-float {
-  animation: float 3s ease-in-out infinite;
-}
 @keyframes pulse {
 
   50% {
@@ -1588,15 +1569,6 @@ video {
 .to-transparent {
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
 }
-.bg-cover {
-  background-size: cover;
-}
-.bg-center {
-  background-position: center;
-}
-.bg-no-repeat {
-  background-repeat: no-repeat;
-}
 .fill-current {
   fill: currentColor;
 }
@@ -1955,9 +1927,6 @@ video {
 }
 .opacity-20 {
   opacity: 0.2;
-}
-.opacity-30 {
-  opacity: 0.3;
 }
 .opacity-50 {
   opacity: 0.5;
