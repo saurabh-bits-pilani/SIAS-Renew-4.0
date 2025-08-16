@@ -12,7 +12,7 @@ const heroImages = [
     subtitle: 'Connect with ancient wisdom'
   },
   {
-    url: 'ttps://pub-5d1db6c95ad0491c90e15290c1e62703.r2.dev/New_Hero-image-%20banner%20/cinematic_macro_shot_of_a_spiritual_ritual.webp',
+    url: 'https://pub-5d1db6c95ad0491c90e15290c1e62703.r2.dev/New_Hero-image-%20banner%20/cinematic_macro_shot_of_a_spiritual_ritual.webp',
     title: 'Crystal Energy Healing',
     subtitle: 'Balance your chakras'
   },
@@ -51,7 +51,6 @@ export function HeroSection() {
           className="w-full h-full bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${currentImage.url})` }}
         />
-        <div className="absolute inset-0 hero-gradient" />
       </div>
 
       {/* Content */}
@@ -60,8 +59,7 @@ export function HeroSection() {
           {/* Logo & Brand */}
           <div className="flex items-center justify-center space-x-3 mb-8">
             <div className="relative">
-              <Star className="w-12 h-12 text-spiritual-gold animate-float" />
-              <div className="absolute inset-0 bg-spiritual-gold opacity-30 rounded-full animate-pulse"></div>
+              <Star className="w-12 h-12 text-spiritual-gold" />
             </div>
             <div>
               <h1 className="text-4xl md:text-5xl font-serif font-bold">Soul Infinity</h1>
