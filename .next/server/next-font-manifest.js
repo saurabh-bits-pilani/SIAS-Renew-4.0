@@ -1,1 +1,0 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/saurabhiim/Documents/Python_Programing/SIAS-Renew-4.0/SIAS-Renew-4.0/app/layout\":[\"static/media/e4af272ccee01ff0-s.p.woff2\",\"static/media/6af6b543dd3be231-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
