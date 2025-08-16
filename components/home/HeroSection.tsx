@@ -58,9 +58,7 @@ export function HeroSection() {
         <div>
           {/* Logo & Brand */}
           <div className="flex items-center justify-center space-x-3 mb-8">
-            <div className="relative">
-              <Star className="w-12 h-12 text-spiritual-gold" />
-            </div>
+            <Star className="w-12 h-12 text-spiritual-gold" />
             <div>
               <h1 className="text-4xl md:text-5xl font-serif font-bold">Soul Infinity</h1>
               <p className="text-lg text-gray-200">Spiritual Guidance & Transformation</p>
@@ -87,7 +85,7 @@ export function HeroSection() {
             <Button 
               asChild
               size="lg"
-              className="bg-spiritual-gold text-black hover:bg-yellow-500 transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 px-8 py-4 text-lg font-medium"
+              className="bg-spiritual-gold text-black px-8 py-4 text-lg font-medium"
             >
               <Link href="/contact" className="flex items-center space-x-2">
                 <span>Book Free Consultation</span>
@@ -99,7 +97,7 @@ export function HeroSection() {
               asChild
               variant="outline"
               size="lg"
-              className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-spiritual-purple transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300 px-8 py-4 text-lg font-medium"
+              className="border-2 border-white text-white bg-transparent px-8 py-4 text-lg font-medium"
             >
               <Link href="/services" className="flex items-center space-x-2">
                 <Sparkles className="w-5 h-5" />
@@ -151,7 +149,7 @@ export function HeroSection() {
           <button
             key={index}
             onClick={() => setCurrentImageIndex(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+            className={`w-3 h-3 rounded-full ${
               index === currentImageIndex ? 'bg-spiritual-gold' : 'bg-white/50'
             }`}
             aria-label={`Switch to image ${index + 1}`}
