@@ -45,11 +45,14 @@ export function HeroSection() {
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image Carousel */}
+      {/* Background Image - instant switch */}
       <div className="absolute inset-0 z-0">
-        <div
-          className="w-full h-full bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${currentImage.url})` }}
+        <img
+          key={currentImage.url}
+          src={currentImage.url}
+          alt={currentImage.title}
+          className="w-full h-full object-cover"
+          style={{ transition: 'none' }} // 🚫 disable fade
         />
       </div>
 
@@ -58,7 +61,9 @@ export function HeroSection() {
         <div>
           {/* Logo & Brand */}
           <div className="flex items-center justify-center space-x-3 mb-8">
-            <Star className="w-12 h-12 text-spiritual-gold" />
+            <div className="relative">
+              <Star className="w-12 h-12 text-spiritual-gold" />
+            </div>
             <div>
               <h1 className="text-4xl md:text-5xl font-serif font-bold">Soul Infinity</h1>
               <p className="text-lg text-gray-200">Spiritual Guidance & Transformation</p>
@@ -70,12 +75,12 @@ export function HeroSection() {
             <h2 className="text-2xl md:text-3xl font-medium text-spiritual-gold">
               {currentImage.title}
             </h2>
-            <p className="text-xl md:text-2xl font-light max-w-3xl mx-auto text-balance">
+            <p className="text-xl md:text-2xl font-light max-w-3xl mx-auto">
               {currentImage.subtitle}
             </p>
           </div>
 
-          <p className="text-lg md:text-xl max-w-4xl mx-auto text-gray-200 text-balance">
+          <p className="text-lg md:text-xl max-w-4xl mx-auto text-gray-200">
             Unlock the mysteries of your destiny with expert Vedic & Western astrology, 
             transformative healing services, and powerful mantras guided by Saurabh Jain
           </p>
@@ -129,16 +134,6 @@ export function HeroSection() {
                 <div className="text-sm text-gray-300">Spiritual Support</div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
-        <div className="flex flex-col items-center space-y-2 text-white">
-          <span className="text-sm">Discover Your Path</span>
-          <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white rounded-full mt-2"></div>
           </div>
         </div>
       </div>
