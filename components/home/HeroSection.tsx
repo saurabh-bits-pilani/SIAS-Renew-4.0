@@ -70,30 +70,41 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* Dynamic Headlines */}
-          <div>
-            <h2 className="text-2xl md:text-3xl font-medium text-spiritual-gold">
-              {currentImage.title}
-            </h2>
-            <p className="text-xl md:text-2xl font-light max-w-3xl mx-auto">
-              {currentImage.subtitle}
-            </p>
+          {/* Main Headline with Blue Background */}
+          <div className="mb-6">
+            <div className="inline-block bg-blue-500/80 backdrop-blur-sm rounded-xl px-6 py-4 mb-6">
+              <h2 className="text-3xl md:text-5xl font-bold text-white">
+                Free Vedic Astrology Consultation in Ahmedabad –{' '}
+                <span className="text-blue-200">Soul Infinity</span>
+              </h2>
+            </div>
           </div>
 
-          <p className="text-lg md:text-xl max-w-4xl mx-auto text-gray-200">
-            Unlock the mysteries of your destiny with expert Vedic & Western astrology, 
-            transformative healing services, and powerful mantras guided by Saurabh Jain
-          </p>
+          {/* Quote Section with Blue Background */}
+          <div className="mb-8">
+            <div className="inline-block bg-blue-500/80 backdrop-blur-sm rounded-xl px-6 py-4 mb-4">
+              <p className="text-lg md:text-xl text-white max-w-4xl mx-auto leading-relaxed">
+                One whose mind remains undisturbed in sorrow, who does not crave for pleasures, 
+                who is free from attachment, fear, and anger, is called a sage of steady wisdom (Sthitadhī Muni).
+              </p>
+            </div>
+            
+            <div className="inline-block bg-blue-500/80 backdrop-blur-sm rounded-xl px-6 py-4">
+              <p className="text-base md:text-lg text-white font-medium">
+                दुःखेष्वनुद्विग्नमना: सुखेषु विगतस्पृह:। वीतरागभयक्रोध: स्थितधीर्मुनिरुच्यते॥
+              </p>
+            </div>
+          </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button 
               asChild
               size="lg"
-              className="bg-spiritual-gold text-black px-8 py-4 text-lg font-medium"
+              className="bg-gradient-to-r from-blue-400 to-green-400 text-white px-8 py-4 text-lg font-medium rounded-xl hover:from-blue-500 hover:to-green-500 transition-all transform hover:scale-105"
             >
               <Link href="/contact" className="flex items-center space-x-2">
-                <span>Book Free Consultation</span>
+                <span>Begin Your Journey</span>
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
@@ -102,7 +113,7 @@ export function HeroSection() {
               asChild
               variant="outline"
               size="lg"
-              className="border-2 border-white text-white bg-transparent px-8 py-4 text-lg font-medium"
+              className="border-2 border-amber-800 text-white bg-transparent px-8 py-4 text-lg font-medium rounded-xl hover:bg-amber-800/20 transition-all"
             >
               <Link href="/services" className="flex items-center space-x-2">
                 <Sparkles className="w-5 h-5" />
